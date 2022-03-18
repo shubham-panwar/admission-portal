@@ -28,9 +28,6 @@ function App() {
     <div className="container">
       <AppCard {...applicationDetails}/>
       <CourseCard  {...courseDetails}/>
-  
-      {/* <AppCard {...applicationDetails}/>
-      <CourseCard  {...courseDetails}/> */}
     </div>
   );
 }

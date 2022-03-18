@@ -8,7 +8,6 @@ const CourseCard = (props) => {
 
     const activeBorder = (active) => {
         setActive(active)
-        console.log('hillow hillow')
     }
 
 
@@ -91,12 +90,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0p
   background-color: #EDF2FF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
       }
-  
-     .selected {
-  background-color: #F7F8FB;
-  border: 1px solid #092682;  
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-     } 
+
   `
 
     return (
