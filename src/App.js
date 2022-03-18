@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import AppCard from './components/AppCard';
+import CourseCard from './components/CourseCard';
+
+//Add value and data here to pass to props
+
+
+const applicationDetails =  {
+  Title:"B.Tech",
+  Duration: '3 yrs | MIT Pune',
+  Deadline: 'Last date:  20 April 2022',
+  CTA: 'Complete Application',
+  Id: 'AP 20987',
+  }
+
+const courseDetails =  {
+Title:"B.Tech",
+Duration: '4 yrs | Manipal, Udipi',
+Deadline: 'Last date:  20 April 2022',
+CTA: 'Apply',
+}
+
+  
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <AppCard {...applicationDetails}/>
+      <CourseCard  {...courseDetails}/>
+  
+      {/* <AppCard {...applicationDetails}/>
+      <CourseCard  {...courseDetails}/> */}
     </div>
   );
 }
